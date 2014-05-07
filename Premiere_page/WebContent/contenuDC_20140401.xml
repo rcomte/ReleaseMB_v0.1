@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<metadata
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:dc="http://purl.org/dc/elements/1.1/"
+xmlns:dcterms="http://purl.org/dc/terms/">
+<dc:title>BIP</dc:title>
+<dc:creator>Pierre-Brice Wieber</dc:creator>
+<dc:creator>Christiane Azevedo-Coste</dc:creator>
+<dc:creator>Roger Pissard</dc:creator>
+<dc:subject>BIP - Premier Robot Athropomorphe</dc:subject>
+<dcterms:abstract>BIP est le premier robot marcheur anthropomorphe europeen.</dcterms:abstract>
+<dc:description>BIP est le premier robot marcheur anthropomorphe europeen. Dans les annees 90, le japon domine le secteur de la robotique avec des machines toujours plus proches de l'Homme qui parlent, dansent...</dc:description>
+<dc:publisher>INRIA Grenoble</dc:publisher>
+<dcterms:created>15/03/1995</dcterms:created>
+<dc:type xsi:type="dcterms:DCMIType">MovingImage</dc:type>
+<dcterms:medium>mp4</dcterms:medium>
+<dcterms:extent>0:44</dcterms:extent>
+<dc:identifier>01</dc:identifier>
+<dc:language xsi:type="dcterms:ISO639-2">French</dc:language>
+<dcterms:hasPart>BIP is genial</dcterms:hasPart>
+<dcterms:hasPart>BIP is great</dcterms:hasPart>
+<dcterms:temporal>First wave robotics</dcterms:temporal>
+<dc:rights>INRIA Rhônes-Alpes</dc:rights>
+<dcterms:license>CECILL</dcterms:license>
+<dcterms:audience>Grand public</dcterms:audience>
+
+</metadata>

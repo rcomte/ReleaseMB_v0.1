@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mountain Bytes v0.1</title>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+       
+     <link href="../../bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+   <script src="../../bootstrap/dist/js/bootstrap.min.js"></script>
+       <script src="../js/jquery-1.11.0.js"></script>
+       
+       <link href="../css/style.css" rel="stylesheet"> <!-- pour que la css soit effective, bien la déclarer après la css Bootstrap  -->
+       <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+   
+      
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation"> <!-- Debut barre de navigation -->
+    	  <div class="container">
+	        <div class="navbar-header" >
+	               <a class="navbar-brand" href="../">MountainBytes</a>
+	               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"  >
+	               <span class="sr-only">Toggle navigation</span>
+	               <span class="icon-bar"></span>
+	               <span class="icon-bar"></span>
+	               <span class="icon-bar"></span>
+	               </button>
+	               
+	        </div>
+	        <div id="navbar-main" class="navbar-collapse collapse" style="height: 0px;" >
+	            <ul class="nav navbar-nav">
+	                 <li class="active"><a href="#">Accueil</a></li>
+	                 <li class="dropdown"><a class="dropdown-toggle" href="#about" data-toggle="dropdown">Savoir plus<b class="caret"></b>
+                     </a>
+                         <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Robots</a>
+                            </li>
+                            <li>
+                                <a href="#">Réalité virtuelle</a>
+                            </li>
+                            <li>
+                                <a href="#">Machines</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                               <a href="#">Autres </a>
+                            </li>
+                        </ul>
+                     </li>
+	                 <li><a href="#contact">Découvrir</a></li>
+	            </ul>
+	            
+	            <form class="navbar-form navbar-right" role="form">
+                     <div class="form-group">
+                             <input class="form-control input-sm" type="text" name="username" placeholder="Identifiant" required="required">
+                     </div>
+                     <div class="form-group">
+                             <input class="form-control  input-sm" type="password" name="password" placeholder="Mot de passe" required="required">
+                     </div>
+                            <button class="btn btn-primary btn-sm" type="submit" name="login" value="Log in" data-role="button">Sign in</button>
+               </form>
+               </div>
+              </div>
+	        </div><!--/.nav-collapse -->
+	      <!-- fin barre de navigation -->
+	      
+	     </br></br>
+   <div class="container">  <!-- class principale du contenu -->
+           <div id="banner" >
+                <div class="row">
+                     <div class="col-xs-12 ">
+                              <h1 id="type">BIP - Robot bipède anthropomorphe</h1>
+                                
+                     </div>
+                     
+             </div>
+          </div>
+          </br>
+          <!--Fin Header, premiere section de la page -->
+          <div id=section1>
+               
+                     <div class="col-lg-6">
+                              <video width="100%" height="100%" id="video" controls>
+				                 	<source src="../media/Cycab.mp4" type="video/mp4"></source>
+				                 	<source src="../media/videos/Inria-737-desequilibre_ap-2.oggtheora.ogv" type="video/ogv"></source>
+				                	<!-- <source src="../media/videos/inriaflowers.webmsd.webm" type="video/webm"></source> -->
+				              </video>
+                     </div>
+                     <div class="col-lg-"6>
+                          <p >
+                           BIP est le premier robot marcheur anthropomorphe européen. Dans les années 90, le japon domine le secteur de la robotique avec des machines
+                           toujours plus proches de l'Homme qui parlent, dansent... <br></br> Seulement, leur morphologie ne ressemble que superficiellement à celle d'un 
+                           être humain, et ces robots se revèlent être davantage des objets de divertissement que des supports de recherche.
+                           </p>
+                           <p > <a class="lead" href="#">Autres informations...</a></p>
+                           <p > <a class="lead" href="#">L'histoire du robot bipède antthropomorphe</a></p>
+                     </div>
+           </div> 
+           
+           </br>
+           <div id=section2>
+                  <div class="row">
+                        <div class="col-lg-12">
+                           <div class="page-header">
+                                        <h2 id="type">Contenus annexes</h2>
+                           </div>
+                     </div>
+               </div>
+               <div class="row">
+                             
+                            <div class="col-lg-3 col-xs-6 col-sm-6 col-md-3 ">
+                                               <div class="bs-component">
+                                                        <h3>En rapport</h3>
+                                                         <video width="100%" height="100%" controls autobuffer poster="../media/logo_INRIA.jpg">
+				                                     	        <source src="../media/Cycab.mp4" type="video/mp4"></source>
+				                                              	<source src="../media/videos/Inria-737-desequilibre_ap-2.oggtheora.ogv" type="video/ogv"></source>
+				                	                             <!-- <source src="../media/videos/inriaflowers.webmsd.webm" type="video/webm"></source> -->
+				                                         </video>
+				                                         <p>This line of text is meant to be treated as fine print. Cum sociis natoque penatibus
+				                                         This line of text is meant to be treated. 
+                                                        </p>
+                                                        <p><a class="btn btn-primary btn-sm">Learn more</a></p>
+                                              </div>
+                            </div>
+                            <div class="col-lg-3 col-xs-6 col-sm-6 col-md-3">
+                                              <div class="bs-component">
+                                                        <h3>Découvrir</h3>
+                                                        <p>Nullam quis <a href="#">risus egeturna mollis </a>ornarevel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
+                                                        </p>
+                                                        <p>This line of text is meant to be treated as fine print. Cum sociis natoque penatibus
+                                                        This line of text is meant to be treated as fine print. Cum sociis natoque penatibus
+                                                        Nullam quis risus egeturna mollis 
+                                                        </p>
+                                                        <p><a class="btn btn-primary btn-sm">Learn more</a></p>
+                                                        
+                                             </div>
+                          
+                           </div>
+                           
+                            <div class="col-lg-3 col-xs-6 col-sm-6 col-md-3">
+                                              <div class="bs-component">
+                                                        <h3>Comprendre</h3>
+                                                        <p>Nullam quis risus egeturna mollis ornarevel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
+                                                        </p>
+                                                        <p>This line of text is meant to be treated as fine print. Cum sociis natoque penatibus
+                                                        This line of text is meant to be treated as fine print. Cum sociis natoque penatibus
+                                                        Nullam quis risus egeturna mollis 
+                                                        </p>
+                                                        <p><a class="btn btn-primary btn-sm">Learn more</a></p>
+                                                        
+                                             </div>
+                           </div>
+                           <div class="col-lg-3 col-xs-6 col-sm-6 col-md-3 ">
+                                              <div class="bs-component">
+                                                       <h3>Approfondir</h3>
+                                                       <p><img src="../media/INRIA_grand.jpg" class="img-responsive" alt="Responsive image"></p>
+                                                       <p>This line of text is meant to be treated as fine print. Cum sociis natoque penatibus
+                                                        </p>
+                                                        <p><a class="btn btn-primary btn-sm">Learn more</a></p>
+                                               </div>
+                          </div>
+                         </div>
+                          
+            </div>
+            </br>
+            </br>
+            <div id=section2>  
+                 <div class="row">
+                        <div class="col-lg-12">
+                                  <div class="bs-component">
+                                          <div class="jumbotron">
+                                                    <h1>MountainBytes</h1>
+                                                    <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                                                    <p>
+                                                    <a class="btn btn-primary btn-lg">Learn more</a>
+                                                    </p>
+                                         </div>
+                                   
+                                  </div>
+                        </div>
+               </div>      
+              </div>           
+     <footer>
+              <div class="row">
+                        <div class="col-lg-12">
+                                  <div class="pull-right">
+                                         <a href="#top">Back to top</a>
+                                  </div>
+                        </div>
+             </div>
+   </footer>    
+   <!-- 
+   <button onclick="enterFullscreen(video);">Plein écran</button>     
+        
+   <script>
+  
+   var video = document.getElementById("video");
+
+   function enterFullscreen(element) {
+           if(element.requestFullScreen) {
+                   //fonction officielle du w3c
+                   element.requestFullScreen();
+           } else if(element.webkitRequestFullScreen) {
+                   //fonction pour Google Chrome (on lui passe un argument pour autoriser le plein écran lors d'une pression sur le clavier)
+                   element.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+           } else if(element.mozRequestFullScreen){
+                   //fonction pour Firefox
+                   element.mozRequestFullScreen();
+           } else {
+                   alert('Votre navigateur ne supporte pas le mode plein écran, il est temps de passer à un plus récent ;)');
+           }
+   }
+
+   
+   function exitFullscreen() {
+       if(document.cancelFullScreen) {
+               //fonction officielle du w3c
+               document.cancelFullScreen();
+       } else if(document.webkitCancelFullScreen) {
+               //fonction pour Google Chrome
+               document.webkitCancelFullScreen();
+       } else if(document.mozCancelFullScreen){
+               //fonction pour Firefox
+               document.mozCancelFullScreen();
+       }
+}
+document.webkitIsFullScreen; //Google Chrome
+document.mozFullscreen; //Firefox
+element.onfullscreenchange = callback;
+element.onwebkitfullscreenchange = callback;
+element.onmozfullscreenchange = callback;
+  
+</script>    -->                 
+                 
+    
+                    
+         
+          
+ 
+  </div>
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

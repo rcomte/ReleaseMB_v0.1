@@ -1,0 +1,2 @@
+RewriteCond %{HTTP_USER_AGENT} "ipod|iphone|ipad|android|palm" [NC]        
+RewriteRule (.*) file://///com-home.inrialpes.fr/rcomte/workspace/ReleaseMB_v0.1/Premi%C3%A8re_page/WebContent/index.html [R=301,L]

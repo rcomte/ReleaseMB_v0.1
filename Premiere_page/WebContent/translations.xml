@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<translations>
+    <translation id="title">
+        <english>Welcome to Mountain Bytes</english>
+        <french>Bienvenue à Mountain Bytes</french>
+    </translation>
+    <translation id="title">
+        <english>Hello there, how are you?</english>
+        <french>Ciao, come stai?</french>
+    </translation>
+</translations>

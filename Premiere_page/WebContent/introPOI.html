@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
+		
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+
+		<title>POI1</title>
+
+		
+		<link type="text/css" rel="stylesheet" href="../css/jquery.mmenu.all.css" />
+		<link type="text/css" rel="stylesheet" href="../css/demo.css" />
+		<style type="text/css">
+			.mm-menu li.img a
+			{
+				font-size: 16px;
+			}
+			.mm-menu li.img a img
+			{
+				float: left;
+				margin: -5px 10px -5px 0;
+			}
+			.mm-menu li.img a small
+			{
+				font-size: 12px;
+			}
+		</style>
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/hammer.js/1.0.5/jquery.hammer.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.mmenu.min.all.js"></script>
+		<script type="text/javascript">
+
+			//	The menu on the left
+			
+
+			//	The menu on the right
+			$(function() {
+
+				var $menu = $('nav#menu-right');
+				    $html = $('html, body');
+
+				$menu.mmenu({
+					position	: 'right',
+					classes		: 'mm-light',
+					dragOpen	: true,
+					counters	: true,
+					searchfield	: false,
+					labels		: {
+						fixed		: !$.mmenu.support.touch
+					},
+					
+				});
+
+				$menu.find( 'li > a' ).on( // ne marche pas comprenddre avec exemple one page
+					'click',
+					function()
+					{
+						var href = $(this).attr( 'href' );
+
+						//	if the clicked link is linked to an anchor, scroll the page to that anchor 
+						if ( href.slice( 0, 1 ) == '#' )
+						{
+							$menu.one(
+								'closed.mm',
+								function()
+								{
+									setTimeout(
+										function()
+										{
+											$html.animate({
+												scrollTop: $( href ).offset().top
+											});	
+										}, 10
+									);	
+								}
+							);						
+						}
+					}
+				);
+			});
+		</script>
+	</head>
+	<body>
+		<div id="page">
+			<div id="header">
+				
+				BIP - Robot bipede anthropomorphe
+				<a href="#menu-right" class="friends right"></a>
+			</div>
+			<div id="content">
+				<div class=media>
+                   <video width="100%" height="100%" id="video" controls autoplay>
+				                 	<source src="../media/Cycab.mp4" type="video/mp4"></source>
+				                 	<source src="../media/videos/Inria-737-desequilibre_ap-2.oggtheora.ogv" type="video/ogv"></source>
+									</video>
+				                	
+	            </div>
+				
+			</div>
+			
+			<nav id="menu-right">
+				<ul>
+					<li><a href="index.html">En savoir plus</a></li>
+					<li><a href="">Emporter</a></li>
+						
+				</ul>
+			</nav>
+		</div>
+	
+	</body>
+</html>

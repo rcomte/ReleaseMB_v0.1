@@ -1,0 +1,44 @@
+@import url(http://fonts.googleapis.com/css?family=Dosis:400,300,500);/* google font tres bien */
+@import url(http://fonts.googleapis.com/css?family=Lato:400,300,700);
+body{
+	font-family: 'Lato', sans-serif;
+/*font-family: 'Dosis', sans-serif;*/
+  font-size:17px;
+   
+}
+
+@font-face {
+    font-family: "Cham;
+    src: url('Cham.ttf');
+}
+@font-face {
+    font-family: "Existence-Light";
+    src: url('Existence-Light.otf');
+}
+
+#navbar-main{
+	 font-size:16px;
+   
+}
+.navbar-brand{
+	 font-size:26px;
+}
+.dropdown-menu li a {
+	font-size:14px;
+}
+h1{
+	font-size:52px;
+	 text-shadow: black 0.01em 0.01em 0.01em;
+}
+.jumbotron {
+  margin-bottom: 0px;
+  height: 350px;
+  color: white;
+  
+  background-color:#4E5D6C;
+}
+#section2{
+	/*background-color: white;
+	color: #2B3E50;*/
+	color: white;
+}
